@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DTank", "Assembly-CSharp.c
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DTank", "Assembly-CSharp-Editor-firstpass.csproj", "{7252B325-50C4-4BE4-C0C3-550BB1022D0C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DTank", "Assembly-CSharp-Editor.csproj", "{E8E807D9-24B3-132A-E2FA-BD0354480A1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{7252B325-50C4-4BE4-C0C3-550BB1022D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7252B325-50C4-4BE4-C0C3-550BB1022D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7252B325-50C4-4BE4-C0C3-550BB1022D0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8E807D9-24B3-132A-E2FA-BD0354480A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8E807D9-24B3-132A-E2FA-BD0354480A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8E807D9-24B3-132A-E2FA-BD0354480A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8E807D9-24B3-132A-E2FA-BD0354480A1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
