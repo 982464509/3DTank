@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_1;UNITY_5_6;UNITY_5;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VR;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_1;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT;MOBILE_INPUT;UNITY_HAS_GOOGLEVR</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -46,89 +46,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Enemy.cs" />
-     <Compile Include="Assets\EnemyManager.cs" />
-     <Compile Include="Assets\Look.cs" />
+     <Compile Include="Assets\FPS Pack\Scripts\Demo\FPSDemoGUI.cs" />
+     <Compile Include="Assets\FPS Pack\Scripts\Demo\FPSDemoReactivator.cs" />
+     <Compile Include="Assets\FPS Pack\Scripts\Demo\FPSFireManager.cs" />
+     <Compile Include="Assets\FPS Pack\Scripts\Demo\MouseLock.cs" />
+     <Compile Include="Assets\FPS Pack\Scripts\FPSLightCurves.cs" />
+     <Compile Include="Assets\FPS Pack\Scripts\FPSParticleSystemScaler.cs" />
+     <Compile Include="Assets\FPS Pack\Scripts\FPSRandomRotateAngle.cs" />
+     <Compile Include="Assets\FPS Pack\Scripts\FPSShaderColorGradient.cs" />
+     <Compile Include="Assets\FPS Pack\Scripts\FPSShaderFloatCurves.cs" />
+     <Compile Include="Assets\FPS Pack\Scripts\MaterialType.cs" />
      <Compile Include="Assets\Scripts\Features\LoadFeatures.cs" />
      <Compile Include="Assets\Scripts\Features\StartFeatures.cs" />
-     <Compile Include="Assets\Scripts\PlayerMove.cs" />
+     <Compile Include="Assets\Scripts\Other\Look.cs" />
      <Compile Include="Assets\Scripts\Rubbish\TurnTurret.cs" />
-     <Compile Include="Assets\Scripts\Shell.cs" />
-     <Compile Include="Assets\Scripts\ShellExp.cs" />
      <Compile Include="Assets\Scripts\UI\StartUI.cs" />
-     <None Include="Assets\Assets\Shaders\_BloomAndFlares\BlendOneOne.shader" />
-     <None Include="Assets\Assets\Shaders\NoiseEffectShaderRGB.shader" />
-     <None Include="Assets\Assets\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
-     <None Include="Assets\Assets\Shaders\ShowAlphaChannel.shader" />
-     <None Include="Assets\Assets\Shaders\SunShaftsComposite.shader" />
-     <None Include="Assets\Assets\Shaders\ColorCorrectionCurves.shader" />
-     <None Include="Assets\Assets\Shaders\ScreenSpaceAmbientObscurance.shader" />
-     <None Include="Assets\Assets\Shaders\_Antialiasing\NFAA.shader" />
-     <None Include="Assets\Assets\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
-     <None Include="Assets\Assets\Shaders\_BloomAndFlares\VignetteShader.shader" />
-     <None Include="Assets\Assets\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
-     <None Include="Assets\Assets\Shaders\MotionBlur.shader" />
-     <None Include="Assets\Assets\Shaders\_BloomAndFlares\MobileBloom.shader" />
-     <None Include="Assets\Assets\Shaders\Contrast Stretch\MinMaxReduction.shader" />
-     <None Include="Assets\Assets\Shaders\_Antialiasing\SSAA.shader" />
-     <None Include="Assets\Assets\Shaders\RadialBlur.shader" />
-     <None Include="Assets\Assets\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
-     <None Include="Assets\Assets\Shaders\ContrastComposite.shader" />
-     <None Include="Assets\Assets\Shaders\_Antialiasing\FXAAPreset3.shader" />
-     <None Include="Assets\Assets\Shaders\FisheyeShader.shader" />
+     <Compile Include="Assets\Scripts\War\Enemy\Enemy.cs" />
+     <Compile Include="Assets\Scripts\War\Enemy\EnemyManager.cs" />
+     <Compile Include="Assets\Scripts\War\Player\PlayerEye.cs" />
+     <Compile Include="Assets\Scripts\War\Player\PlayerMove.cs" />
+     <Compile Include="Assets\Scripts\War\Player\Shell.cs" />
+     <Compile Include="Assets\Scripts\War\Player\ShellExp.cs" />
+     <None Include="Assets\FPS Pack\Shaders\FPSDistortionParticles.shader" />
+     <None Include="Assets\FPS Pack\Readme.txt" />
      <None Include="Assets\Plugins\EasyTouchBundle\EasyTouchControls\ReleaseNotes.txt" />
-     <None Include="Assets\Assets\Shaders\Contrast Stretch\Apply.shader" />
-     <None Include="Assets\Assets\Shaders\frag_ao.cginc" />
+     <None Include="Assets\FPS Pack\Shaders\FPSProjectorBlended.shader" />
      <None Include="Assets\Plugins\EasyTouchBundle\EasyTouchControls\Documentation\Version 2.0.txt" />
-     <None Include="Assets\Assets\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\FPS Pack\Shaders\FPSGlowAdditive.shader" />
      <None Include="Assets\Plugins\EasyTouchBundle\EasyTouch\_Documentation\How to migrate from EasyTouch 4.X.txt" />
-     <None Include="Assets\Plugins\EasyTouchBundle\Readme.txt" />
-     <None Include="Assets\Assets\Shaders\_BloomAndFlares\MobileBlur.shader" />
-     <None Include="Assets\Assets\Shaders\SSAOShader.shader" />
-     <None Include="Assets\Assets\Shaders\ConvertDepth.shader" />
-     <None Include="Assets\Assets\Shaders\ColorCorrectionCurvesSimple.shader" />
-     <None Include="Assets\Assets\Shaders\NoiseEffectShaderYUV.shader" />
-     <None Include="Assets\Assets\Shaders\CreaseApply.shader" />
-     <None Include="Assets\Assets\Shaders\ChromaticAberrationShader.shader" />
-     <None Include="Assets\Assets\Shaders\GlobalFog.shader" />
-     <None Include="Assets\Assets\Shaders\Contrast Stretch\Luminance.shader" />
-     <None Include="Assets\Assets\Shaders\ColorCorrectionSelective.shader" />
-     <None Include="Assets\Assets\Shaders\_DepthOfField\Bokeh34.shader" />
-     <None Include="Assets\Assets\Shaders\CameraMotionBlurDX11.shader" />
-     <None Include="Assets\Assets\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
-     <None Include="Assets\Assets\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
-     <None Include="Assets\Assets\Shaders\BlurEffectConeTaps.shader" />
-     <None Include="Assets\Assets\Shaders\CameraMotionBlur.shader" />
-     <None Include="Assets\Assets\Shaders\_Antialiasing\DLAA.shader" />
-     <None Include="Assets\Assets\Shaders\NoiseAndGrainDX11.shader" />
-     <None Include="Assets\Assets\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
-     <None Include="Assets\Assets\Shaders\_DepthOfField\SeparableBlur.shader" />
-     <None Include="Assets\Assets\Shaders\MotionBlurClear.shader" />
-     <None Include="Assets\Assets\Shaders\ColorCorrectionEffect.shader" />
-     <None Include="Assets\Assets\Shaders\GrayscaleEffect.shader" />
-     <None Include="Assets\Assets\Shaders\SepiaToneEffect.shader" />
-     <None Include="Assets\Assets\Shaders\TwirlEffect.shader" />
-     <None Include="Assets\Assets\Shaders\VortexEffect.shader" />
-     <None Include="Assets\Assets\Shaders\Contrast Stretch\Adaptation.shader" />
-     <None Include="Assets\Assets\Shaders\NoiseAndGrain.shader" />
-     <None Include="Assets\Assets\Shaders\VignettingShader.shader" />
+     <None Include="Assets\FPS Pack\Shaders\FPSLazer.shader" />
+     <None Include="Assets\FPS Pack\Shaders\FPSGlass.shader" />
      <None Include="Assets\Plugins\EasyTouchBundle\EasyTouchControls\Issues in button behavior (MAC).txt" />
-     <None Include="Assets\Assets\Shaders\Tonemapper.shader" />
-     <None Include="Assets\Assets\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
-     <None Include="Assets\Assets\Shaders\_Antialiasing\FXAA2.shader" />
      <None Include="Assets\Plugins\EasyTouchBundle\EasyTouch\RealseNotes.txt" />
-     <None Include="Assets\Assets\Shaders\ColorCorrection3DLut.shader" />
-     <None Include="Assets\Assets\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
-     <None Include="Assets\Assets\Shaders\EdgeDetectNormals.shader" />
-     <None Include="Assets\Assets\Shaders\PrepareSunShaftsBlur.shader" />
-     <None Include="Assets\Assets\Shaders\_BloomAndFlares\Blend.shader" />
-     <None Include="Assets\Assets\Shaders\BlendModesOverlay.shader" />
+     <None Include="Assets\FPS Pack\Shaders\FPSParticleBlendDirLight.shader" />
      <None Include="Assets\Plugins\EasyTouchBundle\EasyTouch\How to migrate from EasyTouch 4.X.txt" />
-     <None Include="Assets\Assets\Shaders\SimpleClear.shader" />
-     <None Include="Assets\Assets\Shaders\_Antialiasing\FXAA3Console.shader" />
-     <None Include="Assets\Assets\Shaders\_Antialiasing\FXAAPreset2.shader" />
-     <None Include="Assets\Assets\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
-     <None Include="Assets\Assets\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+     <None Include="Assets\FPS Pack\Shaders\FPSWaterParticles.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
