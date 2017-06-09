@@ -1,2 +1,0 @@
-# 3DTank
-Unity Demo
